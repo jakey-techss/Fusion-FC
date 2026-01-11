@@ -7,6 +7,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 nav{
@@ -103,4 +104,45 @@ h1::selection{
 p::selection{
     background-color: white;
     color: #FF6D00;
+}
+#main-content > img{
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    min-width: 300px;
+}
+@media (max-width:1000px) {
+    #main-content{
+    display: flex;
+    height: 90%;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+}
+img{
+    margin-bottom: 12px;
+}
+#left-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap:12px;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 8vw;
+    text-align: center;
+    width: 100%;
+}
+p{
+    font-size: 2.5vw;
+    width: 100%;
+    text-align: center;
+}
+#main-content-login{
+    width: 50%;
+}
 }
