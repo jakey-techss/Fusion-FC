@@ -114,8 +114,8 @@ p::selection{
 @media (max-width:1000px) {
     #main-content{
     display: flex;
-    height: 90%;
     padding: 0px 50px;
+    height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
@@ -133,12 +133,12 @@ img{
     margin-bottom: 50px;
 }
 h1{
-    font-size: 8vw;
+    font-size: 7vw;
     text-align: center;
     width: 100%;
 }
 p{
-    font-size: 3vw;
+    font-size: 1rem;
     width: 100%;
     text-align: center;
 }
