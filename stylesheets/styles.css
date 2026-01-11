@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Creepster&display=swap');
+body{
+    background-image: linear-gradient(to top right, #1A1D23,#03A9F4);
+    padding: 0;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    box-sizing: border-box;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+nav > h3{
+    margin: 0;
+    padding: 0;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #FF6D00;
+}
+#nav-login{
+    background-color: transparent;
+    border-radius: 6px;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-style: normal;
+    transition: all 0.5s;
+    border: solid 2px #1A1D23;
+    color: #1A1D23;
+}
+h1{
+     margin: 0;
+    padding: 0;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+    color: white;
+}
+#left-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap:14px;
+}
+#left-content > p{
+    color: white;
+    font-family: "Catamaran";
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+#main-content-login{
+    background-color: white;
+    border-radius: 6px;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    padding: 6px 20px;
+    font-size: 1rem;
+    font-style: normal;
+    width: 30%;
+    transition: all 0.5s;
+    border: solid 2px white;
+    color: #1A1D23;
+}
+#main-content-login:hover{
+    background-color: #FF6D00;
+    color: white;
+}
+#main-content{
+    display: flex;
+    height: 90%;
+    padding: 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-login:hover{
+    background-color: #1A1D23;
+    color: white;
+}
+h3::selection{
+    background-color: white;
+    color: #FF6D00;
+}
+button::selection{
+    background-color: white;
+    color: #FF6D00;
+}
+h1::selection{
+    background-color: white;
+    color: #FF6D00;
+}
+p::selection{
+    background-color: white;
+    color: #FF6D00;
+}
