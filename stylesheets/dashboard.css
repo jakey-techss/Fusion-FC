@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Creepster&display=swap');
+#topBar{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 8px 20px;
+}
+body::selection{
+    background-color: #FF6D00;
+    color: white;
+}
+section > h3{
+    font-family: "Creepster",system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    margin-bottom: 2px;
+    color: #1A1D23;
+}
+section{
+    margin-top: 40px;
+}
+#profilePicture{
+    background-color: #1A1D23;
+    padding: 4px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    background-color: #1A1D23;
+    width: 99%;
+    padding: 16px 22px;
+    border-radius: 6px;
+    color: white;
+}
+#profilePicture > p{
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    color: #FF6D00;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#topBar > div{
+    display: flex;
+    gap:8px;
+    align-items: center;
+}
+#id{
+     font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF6D00;
+}
+#OVR{
+    background-color: #1A1D23;
+    padding: 4px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    margin-left: 4px;
+    flex-direction: column;
+    border: solid 4px #FFE766;
+    box-sizing: border-box;
+}
+#OVR > p:not([id=ovrTitle]){
+    font-size: 16px;
+    line-height: 14px;
+    margin: 0;
+    text-align: center;
+    color: #FF6D00;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#ovrTitle{
+    font-size: 28px;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+    color: #FF6D00;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#topButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+#topButtons > p{
+    font-family: "Catamaran";
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+#topButtons > p:hover{
+    cursor: pointer;
+}

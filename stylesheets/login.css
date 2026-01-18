@@ -1,0 +1,70 @@
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    gap:16px;
+}
+a{
+    text-decoration: none;
+}
+.input{
+    display: flex;
+    width: 70%;
+    max-width: 600px;
+    flex-direction: column;
+}
+h2{
+    font-family: "Creepster",system-ui;
+    color: white;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+label{
+    color: white;
+    font-family: "Creepster",system-ui;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+input{
+    padding: 12px 8px;
+    border-radius: 6px;
+    background-color: #1A1D23;
+    color: white;
+    border:none;
+    font-family: "Creepster",system-ui;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+input[type="password"]{
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+input[type="password"]::placeholder{
+    letter-spacing: 1px;
+}
+
+#form > button{
+    background-color: white;
+    border-radius: 6px;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-style: normal;
+    width: 24%;
+    transition: all 0.5s;
+    border: solid 2px white;
+    color: #1A1D23;
+}
+
+#form > button:hover{
+    background-color: #FF6D00;
+    color: white;
+}
