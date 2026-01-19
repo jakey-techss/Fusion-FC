@@ -10,6 +10,17 @@
 a{
     text-decoration: none;
 }
+select {
+    padding: 8px 0px 8px 4px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    width: 200px;
+    background-color: #1A1D23;
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+    font-weight: 400;
+}
 .input{
     display: flex;
     width: 70%;

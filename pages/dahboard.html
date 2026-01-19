@@ -15,14 +15,14 @@
     <div id="topBar">
         <div>
             <div id="profilePicture">
-                <p>JF</p>
+                <p id="userName"></p>
             </div>
             <div id="OVR">
-                <p id="ovrTitle">95</p>
+                <p id="ovrTitle"></p>
                 <p>OVR</p>
             </div>
             <div id="topButtons">
-                <p>Manage Players</p>
+                <p id="manage">Manage Players</p>
                 <p>Settings</p>
             </div>
         </div>
@@ -32,33 +32,64 @@
         <h3>Stats</h3>
         <table>
             <tr>
-                <td></td>
-                <td>1st Game Of The Year</td>
+                <th></th>
+                <th>1st Game</th>
+                <th></th>
+                <th></th>
+                <th>Total Stats</th>
             </tr>
             <tr>
                 <td>Goals</td>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td>6</td>
             </tr>
             <tr>
                 <td>Assists</td>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td>3</td>
             </tr>
             <tr>
                 <td>Saves</td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+                <td>0</td>
             </tr>
             <tr>
                 <td>Tackles</td>
+                <td>14</td>
+                <td></td>
+                <td></td>
+                <td>14</td>
             </tr>
             <tr>
                 <td>Titles</td>
+                <td>Man Of The Match <br> Strategic Tactician</td>
+                <td></td>
+                <td></td>
+                <td>1 Man Of The Match <br> 1 Strategic Tactician</td>
             </tr>
             <tr>
                 <td>OVR</td>
+                <td>+2</td>
+                <td></td>
+                <td></td>
+                <td>95</td>
             </tr>
             <tr>
                 <td>Rating</td>
+                <td>8.4</td>
+                <td></td>
+                <td></td>
+                <td>8.4</td>
             </tr>
         </table>
     </section>
-    <section>
+    <section id="games">
         <h3>Games</h3>
         <div>
             <div id="upcoming">
@@ -67,7 +98,7 @@
                     <p>1st Game Of The Year</p>
                     <a class="register">Register</a>
                 </div>
-                <a>+ Add Game</a>
+                <a id="addGame">+ Add Game</a>
             </div>
             <div id="past">
                 <p>Past</p>
@@ -81,24 +112,41 @@
     </section>
     <section>
         <h3>Leaderboard</h3>
+        <select>
+            <option>Goals</option>
+            <option>Assists</option>
+            <option>Saves</option>
+            <option>Tackles</option>
+            <option>Titles</option>
+            <option>OVR</option>
+            <option>Rating</option>
+        </select>
         <div id="Leaderboard">
-            <select>
-                <option>Goals</option>
-                <option>Assists</option>
-                <option>Saves</option>
-                <option>Tackles</option>
-                <option>Titles</option>
-                <option>OVR</option>
-                <option>Rating</option>
-            </select>
             <div class="userProfile">
-                <p>Gianluigi Messi</p>
-                <p>30</p>
+                <div class="rank">1</div>
+                <div class="user">
+                    <p>Gianluigi Messi</p>
+                    <p>50 Goals</p>
+                </div>
+            </div>
+            <div class="userProfile">
+                <div class="rank">2</div>
+                <div class="user">
+                    <p>Sergio Neymar</p>
+                    <p>44 Goals</p>
+                </div>
+            </div>
+            <div class="userProfile">
+                <div class="rank">3</div>
+                <div class="user">
+                    <p>Kylian Salah</p>
+                    <p>20 Goals</p>
+                </div>
             </div>
         </div>
     </section>
     <section>
-        <h3>Awards & Titles</h3>
+        <h3>Awards & Titles - 9 Titles</h3>
         <div id="awards">
             <div class="award">
                 <img src="../assets/football-trophy-award-svgrepo-com.svg">
@@ -112,8 +160,32 @@
                 <img src="../assets/soccer-shoe-svgrepo-com.svg">
                 <p>Defensive Technician</p>
             </div>
+             <div class="award">
+                <img src="../assets/football-trophy-award-svgrepo-com.svg">
+                <p>Man Of The Match</p>
+            </div>
+            <div class="award">
+                <img src="../assets/football-game-field-top-view-svgrepo-com.svg">
+                <p>Tactical Genius</p>
+            </div>
+            <div class="award">
+                <img src="../assets/soccer-shoe-svgrepo-com.svg">
+                <p>Defensive Technician</p>
+            </div>
+             <div class="award">
+                <img src="../assets/football-trophy-award-svgrepo-com.svg">
+                <p>Man Of The Match</p>
+            </div>
+            <div class="award">
+                <img src="../assets/football-game-field-top-view-svgrepo-com.svg">
+                <p>Tactical Genius</p>
+            </div>
+            <div class="award">
+                <img src="../assets/soccer-shoe-svgrepo-com.svg">
+                <p>Defensive Technician</p>
+            </div>
         </div>
-    </section>
     <script src="../javascripts/dashboard.js"></script>
 </body>
+
 </html>

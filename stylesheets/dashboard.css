@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Creepster&display=swap');
-#topBar{
+
+#topBar {
     display: flex;
     justify-content: space-between;
 }
-body{
+
+body {
     overflow-x: hidden;
     box-sizing: border-box;
     padding: 8px 20px;
 }
-body::selection{
+
+body::selection {
     background-color: #FF6D00;
     color: white;
 }
-section > h3{
-    font-family: "Creepster",system-ui;
+
+section>h3 {
+    font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
     margin-bottom: 2px;
     color: #1A1D23;
 }
-section{
+
+section {
     margin-top: 40px;
 }
-#profilePicture{
+
+#profilePicture {
     background-color: #1A1D23;
     padding: 4px;
     border-radius: 100%;
@@ -33,14 +39,16 @@ section{
     justify-content: center;
     align-items: center;
 }
-table{
+
+table {
     background-color: #1A1D23;
     width: 99%;
     padding: 16px 22px;
-    border-radius: 6px;
     color: white;
+    font-family: "Catamaran";
 }
-#profilePicture > p{
+
+#profilePicture>p {
     font-size: 32px;
     margin: 0;
     text-align: center;
@@ -49,18 +57,275 @@ table{
     font-weight: 400;
     font-style: normal;
 }
-#topBar > div{
+
+#topBar>div {
     display: flex;
-    gap:8px;
+    gap: 8px;
     align-items: center;
 }
-#id{
-     font-family: "Creepster", system-ui;
+
+#games>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#upcoming {
+    background-color: #1A1D23;
+    border-radius: 6px;
+    width: 40%;
+    min-width: 250px;
+    height: 250px;
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+}
+
+.rank {
+    background-color: white;
+    width: 36px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    text-align: center;
+    color: black;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.user {
+    background-color: white;
+    width: 90%;
+    justify-content: space-between;
+    padding: 0px 12px;
+    display: flex;
+    border-radius: 5px;
+    height: 40px;
+    align-items: center;
+}
+
+.award>img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 4px;
+}
+
+.award {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+    padding: 6px;
+    width: 100px;
+    height: 100px;
+}
+.input{
+    display: flex;
+    width: 70%;
+    max-width: 600px;
+    flex-direction: column;
+}
+label{
+    color: #1A1D23;
+    font-family: "Creepster",system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+input{
+    padding: 12px 8px;
+    border-radius: 6px;
+    background-color: #1A1D23;
+    color: white;
+    border:none;
+    font-family: "Creepster",system-ui;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+input[type="password"]{
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+input[type="password"]::placeholder{
+    letter-spacing: 1px;
+}
+.award:hover {
+    border: solid 1px black;
+    background-image: linear-gradient(to top right, black, #1a1d23);
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+.award>p {
+    font-family: "Creepster", system-ui;
+    color: #FF6D00;
+    margin: 0;
+    text-align: center;
+}
+
+#awards {
+    background-color: #1A1D23;
+    border-radius: 6px;
+    width: 98%;
+    min-width: 250px;
+    flex-wrap: wrap;
+    height: 250px;
+    padding: 20px 16px;
+    display: flex;
+    align-items: start;
+    gap: 4px 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.user>p {
+    margin: 0;
+    font-family: "Creepster", system-ui;
+    color: black;
+}
+
+select {
+    padding: 8px 0px 8px 4px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    width: 200px;
+    background-color: #1A1D23;
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#Leaderboard {
+    background-color: #1A1D23;
+    border-radius: 6px;
+    width: 30%;
+    gap: 8px;
+    height: 350px;
+    min-width: 280px;
+    padding: 15px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#past {
+    background-color: #1A1D23;
+    min-width: 250px;
+    border-radius: 6px;
+    width: 40%;
+    height: 250px;
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.register {
+    text-decoration: underline;
+    color: #FF6D00;
+    font-size: 12px;
+    font-family: "Catamaran";
+}
+
+.register:hover {
+    cursor: pointer;
+}
+
+#upcoming>a {
+    color: #FF6D00;
+    font-size: 12px;
+    font-family: "Catamaran";
+    margin-top: 5px;
+    width: 100%;
+}
+
+#upcoming>a:hover {
+    cursor: pointer;
+}
+
+.game {
+    width: 98%;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+    justify-content: space-between;
+}
+
+.game>p {
+    color: #03A9F4;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 12px;
+    text-align: end;
+}
+
+#upcoming>p {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF6D00;
+    width: 100%;
+    text-align: end;
+}
+
+#past>p {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF6D00;
+    width: 100%;
+    text-align: end;
+}
+
+#id {
+    font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
     color: #FF6D00;
 }
-#OVR{
+
+th {
+    text-align: start;
+    padding: 8px 12px;
+    width: 20%;
+}
+
+td {
+    padding: 6px 8px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#OVR {
     background-color: #1A1D23;
     padding: 4px;
     border-radius: 100%;
@@ -69,13 +334,14 @@ table{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:8px;
+    gap: 8px;
     margin-left: 4px;
     flex-direction: column;
     border: solid 4px #FFE766;
     box-sizing: border-box;
 }
-#OVR > p:not([id=ovrTitle]){
+
+#OVR>p:not([id=ovrTitle]) {
     font-size: 16px;
     line-height: 14px;
     margin: 0;
@@ -85,7 +351,8 @@ table{
     font-weight: 400;
     font-style: normal;
 }
-#ovrTitle{
+
+#ovrTitle {
     font-size: 28px;
     line-height: 20px;
     margin: 0;
@@ -95,19 +362,30 @@ table{
     font-weight: 400;
     font-style: normal;
 }
-#topButtons{
+
+.win {
+    font-family: "Catamaran", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 12px;
+    color: #0D4715;
+}
+
+#topButtons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
 }
-#topButtons > p{
+
+#topButtons>p {
     font-family: "Catamaran";
     line-height: 20px;
     font-size: 14px;
     margin: 0;
     padding: 0;
 }
-#topButtons > p:hover{
+
+#topButtons>p:hover {
     cursor: pointer;
 }
